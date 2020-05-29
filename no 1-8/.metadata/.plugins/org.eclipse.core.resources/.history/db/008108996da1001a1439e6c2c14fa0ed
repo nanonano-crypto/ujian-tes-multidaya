@@ -1,0 +1,39 @@
+package multidaya;
+
+import java.util.Scanner;
+
+public class tiga {
+	public static void main(String[] args) {
+		int max, min, jumlah,  lokasi = 1, array[];
+	    
+		Scanner scan = new Scanner(System.in);
+	    System.out.print("Masukkan jumlah elemen: ");
+	    jumlah = scan.nextInt();
+	    array = new int[jumlah];
+	    
+	    System.out.println("Masukkan "+jumlah+" angka");
+	    for(int i = 0; i < jumlah; i++) {
+	      System.out.print("Angka ke-"+ (i+1) +": " );
+	      array[i] = scan.nextInt();
+	    }
+	    max = array[0];
+	    for(int i = 0; i < jumlah; i++) {
+	      if (array[i] > max){
+	        max = array[i];
+	        lokasi = i+1;
+	      }
+	    }
+	    min = array[0];
+	    
+	    for(int i = 0; i < jumlah; i++) {
+	      if (array[i] < min){
+	        min = array[i];
+	        lokasi = i+1;
+	      }
+	    }
+	    System.out.println("Nilai makasimum adalah "+max+" berada di elemen ke "+lokasi);
+	    System.out.println("Nilai makasimum adalah "+min+" berada di elemen ke "+lokasi);
+	    
+	  
+	}
+}

@@ -1,0 +1,27 @@
+package multidaya;
+
+import java.util.Scanner;
+
+public class tujuh {
+
+	public static void main(String[] args){
+	    int array[],  input;
+	    array = new int[100];
+	    int total=0;
+	    
+	    
+	    Scanner scan = new Scanner(System.in);
+	    System.out.print("Masukkan banyaknya elemen array: ");
+	    
+	    input = scan.nextInt();
+	    
+	    for(int i = 1; i <= input; i++){
+	      System.out.print("Nilai Ke-"+ i +" : ");
+	      array[i] = scan.nextInt();
+	      total = total + array[i];
+	    }
+	   
+	    System.out.println("Hasil nilai total adalah : " + total);
+	    
+	  }
+}

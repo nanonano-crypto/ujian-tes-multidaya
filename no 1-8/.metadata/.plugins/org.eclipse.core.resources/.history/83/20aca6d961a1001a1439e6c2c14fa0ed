@@ -1,0 +1,20 @@
+package multidaya;
+
+import java.util.Scanner;
+
+public class dua {
+	int nilai;
+
+	 Scanner keyboard = new Scanner(System.in);
+
+	 // Tampilkan output ke user
+	 System.out.println("### program penentu grade nilai ###");
+	 System.out.println("***********************************");
+	 System.out.println();
+	 System.out.println("Masukan nilai antara 1-100");
+	 System.out.print("Input Nilai: ");
+	 
+	 nilai = keyboard.nextInt();
+	 System.out.println();
+	 System.out.println("***************");
+}
